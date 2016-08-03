@@ -1,15 +1,11 @@
-package gweek;
-
-import java.io.*;
+import java.util.Scanner;
 
 public class Reverse {
-	public static void main(String[] args)throws Exception {
-		InputStreamReader is = new InputStreamReader(System.in);
-		BufferedReader rb = new BufferedReader(is);
-		System.out.println("Enter string for reverse : ");
-		StringBuffer string = new StringBuffer(rb.readLine()); 
-		System.out.println("Reverse of given string is : "+string.reverse());
-		is.close();
-		rb.close();
-		}
+	public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter String ");
+			StringBuffer str =new StringBuffer(sc.nextLine());
+			System.out.println("After reversing "+str.reverse());
 	}
+
+}
